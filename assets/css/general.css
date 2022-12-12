@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,button,p, input,p{
+  font-family: 'Quicksand', sans-serif !important;
+}
+
+body{
+  margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+  background-color: white !important;
+  /* min-width: 100vw !important; */
+  min-height: 100vh !important;
+}
+
+.page{
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+  overflow-y: scroll !important;
+}
+
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}

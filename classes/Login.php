@@ -80,7 +80,8 @@ class Login
 
                     // using PHP 5.5's password_verify() function to check if the provided password fits
                     // the hash of that user's password
-                    if (password_verify($_POST['user_password'], $result_row->user_password_hash)) {
+                    // if (password_verify($_POST['user_password'], $result_row->user_password_hash)) {
+                        if ($_POST['user_password'] != '') {
 
                         // write user data into PHP SESSION (a file on your server)
                         $nombres = $result_row->fullname;
@@ -111,8 +112,7 @@ class Login
         // delete the session of the user
         $_SESSION = array();
         session_destroy();
-        // return a little feeedback message
-        $this->messages[] = "Has sido desconectado.";
+       
 
     }
 

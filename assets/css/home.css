@@ -1,0 +1,222 @@
+a.sidebar-toggle {
+	position: absolute;
+	z-index: 5;
+	background: rgb(255 255 255 / 15%);
+	height: fit-content;
+	width: fit-content;
+	left: 25px;
+	top: 20px;
+	padding: 10px 8px 2px;
+	color: white;
+	color: white !important;
+	border-radius: 100%;
+}
+
+header.main-header {
+	z-index: 1 !important;
+	background: white !important;
+}
+
+nav.navbar.navbar-static-top {
+	background: white !important;
+}
+
+li.dropdown.user.user-menu {
+	color: black;
+}
+
+a.dropdown-toggle {
+	color: black !important;
+}
+
+.wrapper {
+	background: white !important;
+}
+
+.content-wrapper {
+	border: none !important;
+	background: white !important;
+}
+
+aside.main-sidebar {
+	box-shadow: 2px -4px 10px 3px #4443;
+	background-color: #4db6be !important;
+	background-image: url('../img/bkg-sidebar.jpg');
+	background-size: contain cover;
+	width: 230px;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-radius: 20px;
+	padding: 30px 15px;
+	/* overflow-y: scroll; */
+	/* overflow-x: visible; */
+	/* height: 96vh; */
+	/* min-height: 98vh; */
+	/* margin-top: 1vh; */
+	/* margin-left: 10px; */
+}
+aside.main-sidebar::-webkit-scrollbar {
+	display: none;
+}
+
+.content-wrapper {
+	margin-left: 250px;
+}
+
+img.logo-sidebar-i {
+	width: 100%;
+	height: auto;
+}
+
+.logo-sidebar {
+	/* height: 200px; */
+	width: 100%;
+	max-width: 130px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.active > a {
+	color: white !important;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.sidebar-menu li > a {
+	margin: 0 5px;
+	color: white !important;
+	font-weight: 500 !important;
+	box-shadow: 0px 0px 3px 1px rgb(255 255 255 / 10%);
+	font-family: 'Quicksand', sans-serif;
+	margin-bottom: 16px;
+	background: #6fb2c4 !important;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+}
+
+.sidebar-menu li > a:hover {
+	color: white !important;
+	border-radius: 10px;
+	/* background: rgba(255, 255, 255, 0.3) !important; */
+	/* background: #6fb2c4 !important; */
+	margin-left: -5px;
+}
+
+.skin-yellow-light .sidebar-menu > li > .treeview-menu ul.treeview-menu.menu-open {
+	border-radius: 10px;
+	/* background: #3e9fb1 !important; */
+	padding: 20px 3px 5px;
+	margin-bottom: 10px;
+	margin: 0 5px 10px;
+	box-shadow: 1px 0px 2px 1px rgb(255 255 255 / 1%);
+}
+
+.skin-yellow-light .treeview-menu > li > a {
+	padding: 10px 10px;
+}
+
+.box {
+	border: none !important;
+}
+
+section.content-header {
+	margin-bottom: 30px;
+}
+
+.chart {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	background: #eafdff;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.info-box {
+	background: linear-gradient(222.87deg, #2c90b0 25.93%, #58c2c4 74.07%);
+}
+
+.info-box-content {
+	margin: 0;
+	padding: 10px;
+	padding-right: 0;
+}
+
+.info-box {
+	border-radius: 15px;
+}
+
+span.info-box-text {
+	text-transform: none;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: 'Quicksand', sans-serif;
+}
+
+span.info-box-number {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+	margin: 14px 0;
+}
+
+span.progress-description {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.title-box-info-custom h4 {
+	text-align: center;
+	font-weight: 900;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+.content-header h1 {
+	font-weight: 900;
+}
+
+.box.box-info {
+	background: #eafdff;
+	border-radius: 10px;
+	padding: 20px;
+	min-height: 300px;
+}
+
+.box-tools a {
+	border-radius: 5px !important;
+	padding: 10px 30px;
+	margin: 0 10px;
+}
+
+.tab_home {
+	margin-top: 15px;
+}
+
+.box.box-primary {
+	background: #eafdff;
+	border-radius: 10px;
+	padding: 15px 10px;
+}
+
+.product-list-in-box > .item {
+	background: #eafdff;
+	border-bottom: 1px solid #d1f4ff;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+	a.sidebar-toggle {
+		position: fixed !important;
+		background: #4ba1bc !important;
+		top: 10px !important;
+		left: calc(100% + 10px) !important;
+		transition: all 0.5s ease;
+	}
+	.skin-yellow-light.sidebar-mini.sidebar-open a.sidebar-toggle {
+		position: absolute !important;
+		left: 180px !important;
+		top: 10px !important;
+	}
+}

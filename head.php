@@ -21,4 +21,5 @@
     <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
 	<link rel="stylesheet" href="dist/css/dropdown-menu-custom.css">
   	<link rel="icon" href="img/icon.png">
-	
+    <!-- CUSTOM CSS -->
+	<link rel="stylesheet" href="assets/css/index.css">
