@@ -2,22 +2,24 @@
 	if (!isset($con)){
 		exit;
 	}
-?>
-        <!-- sidebar: style can be found in sidebar.less -->
+?>		
+			
+        <!-- sidebar: style can be found in siddebar.less -->
         <section class="sidebar">
           <!-- Sidebar user panel -->
-          <div class="user-panel">
-            <div class="pull-left image">
-              <img src="dist/img/admin.png" class="img-circle" alt="User Image">
-            </div>
-            <div class="pull-left info">
-              <p><?php echo $_SESSION['full_name']; ?></p>
-              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-            </div>
-          </div>
+          <div class="logo-sidebar">
+						<img src="./assets/img/logo-sidebar.png" alt="" class="logo-sidebar-i">
+					</div>
+					 <!-- Sidebar toggle button-->
+					<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+						<svg viewBox="0 0 100 80" width="20" height="20">
+							<rect style="fill:rgb(255,255,255)" width="100" height="10"></rect>
+							<rect style="fill:rgb(255,255,255)" y="30" width="100" height="10"></rect>
+							<rect style="fill:rgb(255,255,255)" y="60" width="100" height="10"></rect>
+						</svg>
+          </a>
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-            <li class="header">MENÚ</li>
             <li class="<?php if (isset($home) and $home==1){echo "active";}?>">
               <a href="index.php">
                 <i class="fa fa-home"></i> <span>Inicio</span> 

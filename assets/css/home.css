@@ -206,6 +206,30 @@ span.progress-description {
 	margin-bottom: 10px;
 }
 
+a.dropdown-toggle {
+	background: none;
+	background: white !important;
+}
+
+li.user-header {
+	background-color: white !important;
+}
+
+ul.dropdown-menu {
+	border-radius: 20px !important;
+	box-shadow: 0px 0px 1px 1px rgb(0 0 0 / 20%);
+	overflow: hidden;
+	padding: 10px 10px !important;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu>li.user-header>p {
+	color: black !important;
+}
+
+li.dropdown.user.user-menu.open {
+	margin-right: 5px;
+}
+
 @media screen and (max-width: 767px) {
 	a.sidebar-toggle {
 		position: fixed !important;
