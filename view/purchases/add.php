@@ -56,9 +56,9 @@
             <div class="box-header with-border">
               <h3 class="box-title">Nueva Compra</h3>
               <div class='pull-right'>
-				<button type="button" class="btn btn-block btn-info" data-toggle="modal" data-target="#myModal"><i class='fa fa-search'></i> Buscar productos</button>
+				<button type="button" class="btn btn-block btn-info nueva__compra__search" data-toggle="modal" data-target="#myModal"><i class='fa fa-search'></i> Buscar productos</button>
 			  </div>
-			  <div class='pull-right col-md-2'>
+			  <div class='pull-right col-md-3 nueva__compra__box'>
 				 <div class = "input-group">
 					 <span class = "input-group-addon"><i class='fa fa-dollar'></i></span>
 					 <select class='form-control' onchange="currency(this.value);" name="currency_id" id="currency_id">
@@ -94,10 +94,10 @@
 									
 									
 									
-									<div class="col-md-4">
+									<div class="col-lg-4">
                                         <label>Proveedor</label>
 										<div class="input-group">
-                                        <select class="form-control select2" name="supplier_id" id="supplier_id" required>
+                                        <select class="form-control select2 form__select2_proveedor" name="supplier_id" id="supplier_id" required>
 										<?php if (isset($purchase_order_id)){?>
 										<option value="<?php echo $supplier_id;?>" selected><?php echo $supplier_name;?></option>
 										<?php }  
@@ -111,7 +111,7 @@
 										  </div>
                                     </div>
 									
-									<div class="col-md-2">
+									<div class="col-lg-2">
 
                                        <label>Forma de pago</label>
                                        <select name="payment_method" id="payment_method" class='form-control'>
@@ -128,16 +128,16 @@
 									   </select>
                                     </div>
 									
-									 <div class="col-md-2">
+									 <div class="col-lg-2">
 
                                         <label>Compra Nº</label>
                                        <input type="text" class="form-control" name="order_number" id="order_number" required value="<?php echo nex_purchase_number();?>" >
                                     </div>
 									
-									<div class="col-md-2">
+									<div class="col-lg-2">
                                         <label>Fecha de compra</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control datepicker" name="purchase_date"  value="<?php echo date("d/m/Y")?>" readonly="">
+                                            <input type="text" class="form-control datepicker datepicker__compra" name="purchase_date"  value="<?php echo date("d/m/Y")?>" readonly="">
 											<span class="input-group-btn ">
 												<button class="btn btn-default " type="button"><i class="fa fa-calendar "></i></button>
 											</span>
@@ -145,7 +145,7 @@
                                         </div>
                                     </div>
 									
-									<div class="col-md-2">
+									<div class="col-lg-2">
 										<label>Incluye <?php echo strtoupper(tax_txt);?></label>
 										<select name="is_taxeable" id="is_taxeable" class='form-control' onchange="return taxes(this.value);">
 											<option value="1" <?php if ($_SESSION['includes_tax']==1){echo "selected";}?>>Si </option>

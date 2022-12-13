@@ -97,8 +97,8 @@
               <div class="box box-info">
                 <div class="box-header with-border">
                   <h3 class="box-title">Últimas ventas</h3>
-                  <div class="box-tools pull-right">
-                  <a href="new_sale.php" class="btn btn-sm btn-default btn-flat pull-left">Nueva venta</a>
+                  <div class="box-tools pull-right btns_ventas">
+                  <a href="new_purchase.php" class="btn btn-sm btn-default btn-flat pull-left">Nueva venta</a>
                   <a href="manage_invoice.php" class="btn btn-sm btn-default btn-flat pull-right">Ver todas las facturas</a>
                   </div>
                 </div><!-- /.box-header -->

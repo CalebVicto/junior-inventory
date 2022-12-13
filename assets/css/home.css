@@ -181,17 +181,13 @@ span.progress-description {
 	background: #eafdff;
 	border-radius: 10px;
 	padding: 20px;
-	min-height: 300px;
+	/* min-height: 300px; */
 }
 
 .box-tools a {
 	border-radius: 5px !important;
 	padding: 10px 30px;
 	margin: 0 10px;
-}
-
-.tab_home {
-	margin-top: 15px;
 }
 
 .box.box-primary {
@@ -222,12 +218,59 @@ ul.dropdown-menu {
 	padding: 10px 10px !important;
 }
 
-.navbar-nav>.user-menu>.dropdown-menu>li.user-header>p {
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {
 	color: black !important;
 }
 
 li.dropdown.user.user-menu.open {
 	margin-right: 5px;
+}
+
+.btn__footer_top_user {
+	color: #3c8dbc !important;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #3c8dbc;
+	border-radius: 10px !important;
+	background-color: hsla(202, 52%, 49%, 0.05);
+	padding: 12px 8px;
+	font-weight: 700;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	font-size: 14px;
+}
+
+.btn__footer_top_user:hover {
+	background-color: rgb(60 141 188 / 10%) !important;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer {
+	background-color: transparent !important;
+	padding: 0 !important;
+}
+
+.datepicker__compra {
+	padding-left: 15px !important;
+	height: 35px !important;
+	border: none !important;
+	border-radius: 5px !important;
+	background: white !important;
+}
+
+.select2.select2-container.select2-container--default {
+	width: 100% !important;
+}
+
+.search__producto1{
+	width: 200px !important;
+}
+
+.search__producto1div{
+	display: flex;
 }
 
 @media screen and (max-width: 767px) {
@@ -242,5 +285,47 @@ li.dropdown.user.user-menu.open {
 		position: absolute !important;
 		left: 180px !important;
 		top: 10px !important;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.pull-right.col-md-3.nueva__compra__box {
+		margin-top: 15px;
+		width: 100%;
+	}
+	button.btn.btn-block.btn-info.nueva__compra__search {
+		margin-top: 12px;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.box-header.with-border {
+		display: flex;
+		flex-flow: column;
+	}
+
+	.box-tools.pull-right {
+		position: relative;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	div#resultados {
+		overflow: scroll;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.btns_ventas a {
+		width: 100%;
+		margin-top: 5px;
+	}
+	.box.box-info {
+		padding: 5px;
 	}
 }

@@ -35,7 +35,7 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="col-12">
-                      <a href="login.php?logout" class="btn btn-danger btn-flat"><i class='fa fa-power-off'></i> Salir</a>
+                      <a href="login.php?logout" class="btn btn-flat btn__footer_top_user"><i class='fa fa-power-off'></i> Salir</a>
                     </div>
                   </li>
                 </ul>
